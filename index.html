@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Controle Financeiro</h1></header>
+    <main>
+        <div class="saldoDespesa">
+            
+        </div>
+
+        <select id="month">
+            <option value="1">Janeiro</option>
+            <option value="2" >Fevereiro</option>
+            <option value="3" >Março</option>
+            <option value="4" >Abril</option>
+            <option value="5" >Maio</option>
+            <option value="6" >Junho</option>
+            <option value="7" >Julho</option>
+            <option value="8" >Agosto</option>
+            <option value="9" >Setembro</option>
+            <option value="10" >Outubro</option>
+            <option value="11" >Novembro</option>
+            <option value="12" >Dezembro</option>
+        </select>
+
+        <div class="container">
+            <h3>Transações Realizadas</h3>
+            
+            <table id="table">
+                <thead><tr>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr></thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+
+        <div class="add-button">
+            <button type="button" id="addTransaction">Adicionar nova transação</button>
+        </div>
+
+        <div>
+            <div class="addDespesa" id="addDespesa">
+                <input type="text" id="description" placeholder="Descrição" class="field">
+                <input type="number" id="amount" placeholder="Valor" class="field">
+                <select id="despesa-ou-receita">
+                    <option value="despesa">Despesa</option>
+                    <option value="receita" >Receita</option>
+                </select>
+                <input type="button" value="&lt;" class="back" id="close-add">
+            </div>
+
+        </div>
+
+        <div class="modal">
+
+        </div>
+
+
+    </main>
+    <script src="main.js"></script>
+
+</body>
+</html>
