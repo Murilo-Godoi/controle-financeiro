@@ -9,11 +9,6 @@ const whatTable = (event) => {
 }
 
 
-document.getElementById('month').addEventListener('click', whatTable)
-
-
-
-
 const getLocalStorage = (month) => JSON.parse(localStorage.getItem(`${month}`)) ?? []
 
 const setLocalStorage = (despesas,month) => localStorage.setItem(`${month}`,JSON.stringify(despesas))
@@ -234,6 +229,6 @@ document.querySelector('#tbody').addEventListener('dblclick', editRow)
 document.getElementById('addTransaction').addEventListener('click', openAdd)
 document.getElementById('close-add').addEventListener('click', closeAdd)
 document.querySelector('.addDespesa').addEventListener('keypress', pressEnter)
-
+document.getElementById('month').addEventListener('click', whatTable)
 
 
